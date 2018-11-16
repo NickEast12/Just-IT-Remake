@@ -1,0 +1,517 @@
+* {
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box; 
+	/*border: solid black .1px */
+}
+
+p, li, h1, h5, h4{
+	font-family: open sans;
+	color: white;
+	
+}
+/*----------NavBar----------*/
+.navbar-wrapper {
+	width: 100%;
+	height: 5em;
+	display: grid;
+	grid-template-columns: 40% 40% 18%; 
+	grid-gap: 1%;
+	margin-top: 10px; 
+	
+}
+.navbar-logo {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.navbar-ul-wrapper {
+	width: 100%;
+	margin: auto;
+
+}
+.navbar-ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	list-style: none;
+	text-align: center;
+	margin-left: 5em
+	
+
+	
+}
+.navbar-ul li {
+	text-transform: uppercase;
+	color: #777; 
+	font-size: 14px; 
+	letter-spacing: .1px;
+	font-weight: 600;
+	margin: 0 9px
+	
+}
+.navbar-contact-number{
+	width: 100%;
+	margin: auto;
+}
+.navbar-contact-number p {
+	color: #777;
+	text-transform: uppercase; 
+	font-size: 22px;
+	font-weight: 100; 
+	margin-bottom: 7px;
+	
+}
+/*----------NavBar----------*/
+
+/*----------Body----------*/
+.body-wrapper {
+	display: grid;
+	background-color: red;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows:  1fr 1fr; 
+	grid-template-areas: 
+		"one one two three"
+		"one one four five"
+}
+/*----------Div Group 1 ----------*/
+.body-div-one {
+	grid-area: one; 
+	background-color: rgba(15, 79, 68);
+}
+.body-div-one h1 {
+	text-transform: uppercase;
+	font-weight: 100;
+    letter-spacing: 0.5rem;
+	font-size: 5rem;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-top: 7rem
+	
+}
+.body-div-one span {
+	font-weight: bold;
+}
+.body-div-one p {
+	font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+	font-size: 2.5rem;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	margin-top: 2rem;
+	
+}
+/*----------Div Group 1 ----------*/
+
+/*----------Div Group 2 ----------*/
+.body-div-two {
+	grid-area: two;
+	position: relative;
+}
+.body-div-two img {
+	width: 100%;
+}
+.body-div-two p {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: rgba(217, 0, 113);
+	padding: 5px;
+	margin-top: -4px;
+	font-weight: 100;
+	letter-spacing: .6px;
+
+	
+}
+/*----------Div  2 Overlay ----------*/
+.body-div-two-overlay {
+	position: absolute;
+	background-color: rgba(217, 0, 113, 1);
+	width: 100%;
+	height: 90%;
+	top: 0;
+	opacity: 0;
+	
+	
+	
+}
+.body-div-two-overlay h5 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase; 
+	font-weight: 400;
+	width: 90%;
+	margin: auto;
+	font-size: 25px;
+	margin-top: 5rem;
+	
+	
+}
+/*----------Div  2 Animations ----------*/
+.body-div-two-overlay {
+    transition: opacity .6s linear;
+}
+.body-div-two:hover .body-div-two-overlay {
+	opacity: .8;
+	
+}
+/*----------Div Group 2 ----------*/
+
+/*----------Div Group 3 ----------*/
+.body-div-three {
+	grid-area: three; 
+	position: relative;
+}
+.body-div-three img {
+	width: 100%;
+}
+.body-div-three p {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: rgba(141, 0, 60);
+	padding: 5px;
+	margin-top: -4px;
+	font-weight: 100;
+	letter-spacing: .6px;
+	
+	
+}
+/*----------Div  3 Overlay ----------*/
+.body-div-three-overlay {
+	position: absolute;
+	background-color: rgba(141, 0, 60, 1);
+	width: 100%;
+	height: 90%;
+	top: 0;
+	opacity: 0;
+	
+	
+	
+}
+.body-div-three-overlay h5 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase; 
+	font-weight: 400;
+	width: 90%;
+	margin: auto;
+	font-size: 20px;
+	margin-top: 5rem;
+	
+	
+}
+/*----------Div  3 Animations ----------*/
+.body-div-three-overlay {
+    transition: opacity .6s linear;
+}
+.body-div-three:hover .body-div-three-overlay {
+	opacity: .8;
+	
+}
+/*----------Div Group 3 ----------*/
+
+/*----------Div Group 4 ----------*/
+.body-div-four {
+	grid-area: four;
+	position: relative;
+}
+.body-div-four img {
+	width: 100%;
+}
+.body-div-four p {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: rgba(20, 151, 138);
+	padding: 5px;
+	margin-top: -4px;
+	font-weight: 100;
+	letter-spacing: .6px;
+}
+/*----------Div  4 Overlay ----------*/
+.body-div-four-overlay {
+	position: absolute;
+	background-color: rgba(20, 151, 138, 1);
+	width: 100%;
+	height: 90%;
+	top: 0;
+	opacity: 0;
+	
+	
+	
+}
+.body-div-four-overlay h5 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase; 
+	font-weight: 400;
+	width: 90%;
+	margin: auto;
+	font-size: 20px;
+	margin-top: 5rem;
+	
+	
+}
+/*----------Div  4 Animations ----------*/
+.body-div-four-overlay {
+    transition: opacity .6s linear;
+}
+.body-div-four:hover .body-div-four-overlay {
+	opacity: .8;
+	
+}
+/*----------Div Group 4 ----------*/
+
+/*----------Div Group 5 ----------*/
+.body-div-five {
+	grid-area: five; 
+	position: relative;
+}
+.body-div-five img {
+	width: 100%;
+}
+.body-div-five p {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: rgba(15, 79, 68);
+	padding: 5px;
+	margin-top: -4px;
+	font-weight: 100;
+	letter-spacing: .6px;
+	
+	
+}
+/*----------Div  5 Overlay ----------*/
+.body-div-five-overlay {
+	position: absolute;
+	background-color: rgba(15, 79, 68, 1);
+	width: 100%;
+	height: 90%;
+	top: 0;
+	opacity: 0;
+	
+	
+	
+}
+.body-div-five-overlay h5 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase; 
+	font-weight: 400;
+	width: 90%;
+	margin: auto;
+	font-size: 20px;
+	margin-top: 5rem;
+	
+	
+}
+/*----------Div  5 Animations ----------*/
+.body-div-five-overlay {
+    transition: opacity .6s linear;
+}
+.body-div-five:hover .body-div-five-overlay {
+	opacity: .8;
+	
+}
+/*----------Div Group 5 ----------*/
+
+/*--------------------Lower body group 1---------------*/
+.lower-body-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-gap: 5px;
+	width: 90%;
+	height: 30rem; 
+	margin: 30px auto;
+	
+}
+.lower-body-wrapper-1 {
+	width: 90%;
+	margin: auto;
+	text-align: 
+}
+.lower-body-wrapper-1 p {
+	font-weight: 300; 
+	font-size: 1.15rem; 
+	width: 90%; 
+	margin: auto;
+	margin-bottom: 20px;
+	 color: #777; 
+
+}
+.lower-body-wrapper-1 h5 {
+	width: 100%; 
+	text-align: center; 
+	font-size: 1.15rem;
+	margin: 2.4em 0 3em;
+	color: #2C3E50;
+
+}
+
+/*--------------------Lower body group 2---------------*/
+.lower-body-wrapper-2 {
+	background-color: none;
+	
+}
+.lower-body-wrapper-2 h4 {
+	font-weight: 700;
+	color: #2C3E50;
+	font-size: 17px;
+    line-height: 28px;
+	margin-bottom: 1em
+}
+.lower-body-wrapper-2 p {
+	font-weight: 300; 
+	font-size: 1.15rem; 
+	width: 80%; 
+	margin-bottom: 20px;
+	 color: #777; 
+}
+
+/*--------------------Lower body group 3---------------*/
+.lower-body-wrapper-3 {
+	width: 80%;
+	margin: auto;
+	margin-top: 0rem;
+	text-decoration: overline, .1px black;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 145px 1fr;
+	grid-template-areas:  
+		"one one"
+		"two three"
+}
+.lower-body-wrapper-3 h4 {
+	grid-area: one;
+	   text-align: center;
+    font-size: 2em;
+    padding: 20px 0 10px 0;
+	font-weight: 500; 
+	color: #2C3E50;
+	
+	
+}
+.item {
+	    margin: 100px auto;
+		margin-bottom: 0;
+        width: 250px;
+		border-top: 1px solid #eee
+}
+.lower-body-wrapper-3-1 {
+	grid-area: two;
+	width: 90%;
+	margin-right: 10%; 
+
+}
+.lower-body-wrapper-3-1 p  {
+	font-size: 17px;
+    line-height: 28px;
+	font-size: 1em; 
+	color: #2C3E50;
+	
+}
+.lower-body-wrapper-3-1 img{
+	float: left;
+	width: 210px;
+		margin: 0 20px 10px 0
+
+}
+
+.lower-body-wrapper-3-2 {
+	grid-area: three; 
+	width: 90%;
+	margin-left: 10%; 
+}
+
+.lower-body-wrapper-3-2 p  {
+	font-size: 17px;
+    line-height: 28px;
+	font-size: 1em; 
+	color: #2C3E50;
+	
+}
+.lower-body-wrapper-3-2 img{
+	float: left;
+	width: 210px;
+	margin: 0 20px 10px 0
+	
+}
+/*--------------------Footer---------------*/
+footer {
+	 background-color: #eee;
+	margin-top: 5em; 
+	height: 40rem;
+}
+.footer-links {
+	width: 80%; 
+	margin: auto; 
+	padding: 60px 0 0 0; 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+.footer-links h5 {
+	font-size: 22px;
+    margin-top: 0;
+    text-transform: uppercase;
+	font-weight: 600; 
+	    color: #2C3E50;
+}
+.footer-links ul {
+	margin-top: 10px
+}
+.footer-links ul li {
+	color: #2C3E50;
+	list-style: none; 
+	line-height: 30px;
+	text-transform: capitalize;
+	
+
+	
+}
+/*--------------------Footer links - animations---------------*/
+.footer-links ul li {
+	transition: color 1s ease-in-out;
+}
+.footer-links ul li:hover {
+	color: rgba(217, 0, 113);
+	border-bottom: solid red .1px;
+}
+
+
+.links-hr {
+	margin:  80px auto 0 auto;
+	width: 66rem;
+	padding: 0; 
+    border-bottom: .1px solid #E2E2E2;
+}
+
+
+.address-links-div {
+	width: 60%;
+	text-align: center;
+	margin:  40px auto; 
+	
+}
+.address-links-div p {
+	color: black;
+	font-size: .8em;
+}
+
+.social-media-links img {
+	width: 30px;
+	margin-top: 14px; 
+}
+#twitter {
+	height: 30px;
+}
+
+.final-footer {
+	    background: #ddd none repeat scroll 0 0;
+    margin: 35px 0 0;
+    padding: 25px 0;
+    text-align: center;
+}
+.final-footer p {
+	color: black;
+	font-size: .8em; 
+}
